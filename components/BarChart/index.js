@@ -49,9 +49,9 @@ export default function BarChart() {
                     display: true,
                     text: "Daily Revenue"
                 },
-                maintainAspectRatio: false,
-                responsive: true
-            }
+            },
+            responsive: true,
+            maintainAspectRatio: false
         })
     }, [])
 

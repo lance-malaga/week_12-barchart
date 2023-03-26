@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import BarChart from '@/components/BarChart'
+import MultiaxisLineChart from '@/components/MultiaxisLineChart'
+import StackedBarChart from '@/components/StackedBarChart'
+import DoughnutChart from '@/components/DoughnutChart'
 
 export default function Home() {
 	return (
@@ -12,7 +15,11 @@ export default function Home() {
 			<link rel="icon" href="/favicon.ico" />
 		</Head>
 		<main className={styles.main}>
-			<BarChart />
+			<h1>Chart.js Examples</h1>
+			{/* <BarChart /> */}
+			<MultiaxisLineChart />
+			<StackedBarChart />
+			<DoughnutChart />
 		</main>
 	</>
 	)
