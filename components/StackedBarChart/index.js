@@ -56,9 +56,17 @@ export default function StackedBarChart() {
             scales: {
                 x: {
                     stacked: true,
+                    title: {
+                        display: true,
+                        text: 'Year'
+                    }
                 },
                 y: {
                     stacked: true,
+                    title: {
+                        display: true,
+                        text: 'Total Commodities'
+                    }
                 },
             },
         })

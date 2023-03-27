@@ -39,7 +39,7 @@ export default function DoughnutChart() {
                     display: true,
                     text: 'Top 5 Emitting Sectors in 2020, Canada',
                 },
-            },
+            }
         })
     }, [])
 
@@ -48,6 +48,7 @@ export default function DoughnutChart() {
             <div className={styles.container}>
                 <Doughnut data={chartData} options={chartOptions} />
             </div>
+            <span className={styles.label}>Kilotonnes of Carbon Dioxide</span>
         </>
     )
 }

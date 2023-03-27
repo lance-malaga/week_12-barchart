@@ -34,7 +34,7 @@ export default function MultiaxisLineChart() {
             labels: ['March 06', 'March 07', 'March 08', 'March 09', 'March 10'],
             datasets: [
                 {
-                    label: 'Government of Canada marketable bonds - Averageyield - Over 10 years',
+                    label: 'Government of Canada marketable bonds',
                     data: [3.28, 3.24, 3.17, 3.1, 2.86],
                     borderColor: 'rgb(58,13,33)',
                     backgroundColor: 'rgba(58,13,33,0.7)',
@@ -61,14 +61,24 @@ export default function MultiaxisLineChart() {
             plugins: {
                 title: {
                     display: true,
-                    text: 'Selected Bond Yields',
+                    text: 'Government of Canada marketable bonds',
                 },
             },
             scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Date'
+                    }
+                },
                 y: {
                     type: 'linear',
                     display: true,
                     position: 'left',
+                    title: {
+                        display: true,
+                        text: 'Average yield'
+                    }
                 },
                 y1: {
                     type: 'linear',
@@ -77,6 +87,10 @@ export default function MultiaxisLineChart() {
                     grid: {
                         drawOnChartArea: false,
                     },
+                    title: {
+                        display: true,
+                        text: 'Average yield'
+                    }
                 },
             },
         })
